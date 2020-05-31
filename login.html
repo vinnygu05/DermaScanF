@@ -1,0 +1,221 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <style type="text/css">
+
+        .hidden.menu {
+          display: none;
+        }
+    
+        .masthead.segment {
+          min-height: 700px;
+          padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+          margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+          margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+          margin-top: 3em;
+          margin-bottom: 0em;
+          font-size: 4em;
+          font-weight: normal;
+        }
+        .masthead h2 {
+          font-size: 1.7em;
+          font-weight: normal;
+        }
+    
+        .ui.vertical.stripe {
+          padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+          font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+          margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+          clear: both;
+        }
+        .ui.vertical.stripe p {
+          font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+          margin: 3em 0em;
+        }
+    
+        .quote.stripe.segment {
+          padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+    
+        .footer.segment {
+          padding: 5em 0em;
+        }
+    
+        .secondary.pointing.menu .toc.item {
+          display: none;
+        }
+    
+        @media only screen and (max-width: 700px) {
+          .ui.fixed.menu {
+            display: none !important;
+          }
+          .secondary.pointing.menu .item,
+          .secondary.pointing.menu .menu {
+            display: none;
+          }
+          .secondary.pointing.menu .toc.item {
+            display: block;
+          }
+          .masthead.segment {
+            min-height: 350px;
+          }
+          .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+          }
+          .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+          }
+        }
+    
+    
+      </style>
+</head>
+<body>
+    <div class="ui top fixed menu">
+        <a class="item" href="index.html">
+          <img src="/img/logo.png">
+        </a>
+        <a class="item" href="index.html">Home</a>
+      </div>  
+      
+      <!-- Page Contents -->
+<div class="pusher">
+  
+    <div style="padding-left:5%; padding-right:5%;" class="ui vertical stripe segment">
+        
+        <div class="ui top attached tabular menu">
+            <div class="item" data-tab="one">Sign Up</div>
+            <div class="active item" data-tab="two">Log In</div>
+            <div class="item" data-tab="three">Forgot Password</div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="one">
+            
+            <form class="ui form">
+                <div class="field">
+                  <label>First Name</label>
+                  <input type="text" name="first-name" placeholder="First Name">
+                </div>
+                <div class="field">
+                  <label>Last Name</label>
+                  <input type="text" name="last-name" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email">
+                  </div>
+                  
+                  <div class="ui form info">
+                    <div class="field">
+                      <label>Password</label>
+                      <input type="password" placeholder="Password">
+                    </div>
+                    <div class="ui info message">
+                      <div class="header">Requirements</div>
+                      <ul class="list">
+                        <li>Password must contain at least <b>12 characters</b></li>
+                        <li>Password must contain at least <b>1 special character</b></li>
+                        <li>Password must contain at least <b>1 number</b></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label>Re-enter Password</label>
+                    <input type="password" placeholder="Re-enter Password">
+                </div>
+
+                <div class="field">
+                  <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>I agree to the Terms and Conditions</label>
+                  </div>
+                </div>
+                <button class="ui blue button" type="submit">Sign Up</button>
+              </form>
+
+          </div>
+          <div class="ui bottom active attached tab segment" data-tab="two">
+
+            <form class="ui form">
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email">
+                  </div>
+
+                  <div class="field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <button class="ui green button" type="submit">Log In</button>
+              </form>
+
+
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="three">
+            <form class="ui form">
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email">
+                  </div>
+                <button class="ui purple button" type="submit">Send Password Recovery Email</button>
+              </form>
+          </div>
+    </div>
+
+  </div>
+
+  <div class="ui blue inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Athletic Trainer</a>
+            <a href="#" class="item">Workouts</a>
+            <a href="#" class="item">Routine</a>
+            <a href="#" class="item">Diet</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Stephen Nwaukoni</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+
+    <script>
+        $('.tabular.menu .item').tab();
+        $('.progress').progress();
+          </script>
+</body>
+

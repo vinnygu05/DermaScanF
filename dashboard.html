@@ -1,0 +1,779 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <style type="text/css">
+
+        .hidden.menu {
+          display: none;
+        }
+    
+        .masthead.segment {
+          min-height: 700px;
+          padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+          margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+          margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+          margin-top: 3em;
+          margin-bottom: 0em;
+          font-size: 4em;
+          font-weight: normal;
+        }
+        .masthead h2 {
+          font-size: 1.7em;
+          font-weight: normal;
+        }
+    
+        .ui.vertical.stripe {
+          padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+          font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+          margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+          clear: both;
+        }
+        .ui.vertical.stripe p {
+          font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+          margin: 3em 0em;
+        }
+    
+        .quote.stripe.segment {
+          padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+    
+        .footer.segment {
+          padding: 5em 0em;
+        }
+    
+        .secondary.pointing.menu .toc.item {
+          display: none;
+        }
+    
+        @media only screen and (max-width: 700px) {
+          .ui.fixed.menu {
+            display: none !important;
+          }
+          .secondary.pointing.menu .item,
+          .secondary.pointing.menu .menu {
+            display: none;
+          }
+          .secondary.pointing.menu .toc.item {
+            display: block;
+          }
+          .masthead.segment {
+            min-height: 350px;
+          }
+          .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+          }
+          .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+          }
+        }
+    
+    
+      </style>
+</head>
+<body>
+    <div class="ui top fixed menu">
+        <a class="item" href="index.html">
+            <img src="/img/logo.png">
+          </a>
+        <a class="item">Dashboard</a>
+        <div class="right menu">
+            <a class="item">
+                <i class="cog icon"></i>
+                Settings
+            </a>
+            <div class="item">
+                <a class="ui purple button" href="billing.html">Subscribe</a>
+            </div>
+            <div class="item">
+                <a class="ui red button" href="login.html">Log Out</a>
+            </div>
+        </div>
+      </div>  
+      
+      <!-- Page Contents -->
+<div class="pusher">
+  
+    <div style="padding-left:5%; padding-right:5%;" class="ui vertical stripe segment">
+        
+        <div class="ui top attached tabular menu">
+            <div class="active item" data-tab="one">Athletic Trainer</div>
+            <div class="item" data-tab="two">Workouts</div>
+            <div class="item" data-tab="three">Routine</div>
+            <div class="item" data-tab="four">Diet</div>
+          </div>
+          <div class="ui bottom attached active tab segment" data-tab="one">
+            
+            <div class="ui green progress" data-total="100" data-value="37">
+                <div class="bar"></div>
+                <div class="label"> Monthly Progress</div>
+              </div>
+
+              <div class="ui segment">
+                <div class="ui two column very relaxed grid">
+                  <div class="column">
+
+                    <h4 class="ui header">Meetings</h4>
+                    <div class="ui link cards">
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/gym.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meeting #1</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 2020
+                              </span>
+                              <span>
+                                <i class="user icon"></i>
+                                21 Attendees
+                              </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="image">
+                              <img src="/img/gym.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meeting #2</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                September 2020
+                              </span>
+                              <span>
+                                <i class="user icon"></i>
+                                30 Attendees
+                              </span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/gym.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meeting #3</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                October 2020
+                              </span>
+                              <span>
+                                <i class="user icon"></i>
+                                15 Attendees
+                              </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <div class="column">
+                    <div>
+                        <h4 class="ui header">Send a Message</h4>
+                        <div class="ui form">
+                            <div class="field">
+                              <label>Message</label>
+                              <textarea></textarea>
+                            </div>
+                            <button class="ui button" type="submit">Send</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui vertical divider"></div>
+              </div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="two">
+            
+            <div class="ui blue progress" data-total="100" data-value="67">
+                <div class="bar"></div>
+                <div class="label"> Weekly Progress</div>
+              </div>
+
+              <div class="ui segment">
+                <div class="ui two column very relaxed grid">
+                  <div class="column">
+
+                    <h4 class="ui header">Workouts</h4>
+                    <div class="ui link cards">
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/workout.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Workout #1</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 10 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                560 Calories
+                              </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/workout.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Workout #2</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 12 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                300 Calories
+                              </span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/workout.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Workout #3</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 14 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                700 Calories
+                              </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <div class="column">
+                    <div>
+                        <h4 class="ui header">Calories Burned</h4>
+                        <canvas id="myChart"></canvas>
+
+                        <div class="ui form info">
+                            <div class="ui info message">
+                              <div class="header">Suggestions</div>
+                              <ul class="list">
+                                <li>Add <b>Bicep Curls</b> to your routine</li>
+                                <li>Spend more time working on <b>Calves</b></li>
+                                <li>Spend an hour of <b>Cardio</b></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui vertical divider"></div>
+              </div>
+
+
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="three">
+
+            <div class="ui purple progress" data-total="100" data-value="56">
+                <div class="bar"></div>
+                <div class="label"> Hourly Progress</div>
+              </div>
+
+              <div class="ui segment">
+                <div class="ui two column very relaxed grid">
+                  <div class="column">
+
+                    <h4 class="ui header">Upcoming Activities</h4>
+                    <div class="ui link cards">
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/routine.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Activity #3</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                4:00 PM
+                              </span>
+                              <span>
+                                <i class="dumbbell icon"></i>
+                                Workout
+                              </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/routine.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Activity #4</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                6:00 PM
+                              </span>
+                              <span>
+                                <i class="utensils icon"></i>
+                                Diet
+                              </span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/routine.jpeg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Activity #5</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                8:00 PM
+                              </span>
+                              <span>
+                                <i class="dumbbell icon"></i>
+                                Workout
+                              </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <div class="column">
+                    <div>
+                        <h4 class="ui header">Completed Activities</h4>
+                        
+                        <div class="ui link cards">
+
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/img/done.jpg">
+                                </div>
+                                <div class="content">
+                                  <div class="header">Activity #1</div>
+                                  <div class="meta">
+                                    <a>Placeholder</a>
+                                  </div>
+                                  <div class="description">
+                                     Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                                  </div>
+                                </div>
+                                <div class="extra content">
+                                  <span class="right floated">
+                                    10:30 AM
+                                  </span>
+                                  <span>
+                                    <i class="dumbbell icon"></i>
+                                    Workout
+                                  </span>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/img/done.jpg">
+                                </div>
+                                <div class="content">
+                                  <div class="header">Activity #2</div>
+                                  <div class="meta">
+                                    <a>Placeholder</a>
+                                  </div>
+                                  <div class="description">
+                                     Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                                  </div>
+                                </div>
+                                <div class="extra content">
+                                  <span class="right floated">
+                                    11:30 AM
+                                  </span>
+                                  <span>
+                                    <i class="utensils icon"></i>
+                                    Diet
+                                  </span>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/img/done.jpg">
+                                </div>
+                                <div class="content">
+                                  <div class="header">Activity #3</div>
+                                  <div class="meta">
+                                    <a>Placeholder</a>
+                                  </div>
+                                  <div class="description">
+                                     Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                                  </div>
+                                </div>
+                                <div class="extra content">
+                                  <span class="right floated">
+                                    3:00 PM
+                                  </span>
+                                  <span>
+                                    <i class="dumbbell icon"></i>
+                                    Workout
+                                  </span>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+                <div class="ui vertical divider"></div>
+              </div>
+
+
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="four">
+
+            <div class="ui orange progress" data-total="100" data-value="44">
+                <div class="bar"></div>
+                <div class="label"> Weekly Progress</div>
+              </div>
+
+              <div class="ui segment">
+                <div class="ui two column very relaxed grid">
+                  <div class="column">
+
+                    <h4 class="ui header">Meals</h4>
+                    <div class="ui link cards">
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/food.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meal #1</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 10 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                560 Calories
+                              </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/food.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meal #2</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 12 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                670 Calories
+                              </span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/img/food.jpg">
+                            </div>
+                            <div class="content">
+                              <div class="header">Meal #3</div>
+                              <div class="meta">
+                                <a>Placeholder</a>
+                              </div>
+                              <div class="description">
+                                 Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <span class="right floated">
+                                August 14 2020
+                              </span>
+                              <span>
+                                <i class="fire icon"></i>
+                                800 Calories
+                              </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <div class="column">
+                    <div>
+                        <h4 class="ui header">Calories Consumed</h4>
+                        <canvas id="myChart1"></canvas>
+
+                        <div class="ui form info">
+                            <div class="ui info message">
+                              <div class="header">Suggestions</div>
+                              <ul class="list">
+                                <li>Add more <b>Protein</b> to your diet</li>
+                                <li>Cut down on excessive <b>Carbs</b></li>
+                                <li>Increase your <b>Dairy</b> intake</li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui vertical divider"></div>
+              </div>
+
+          </div>
+    </div>
+
+  </div>
+
+  <div class="ui blue inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Athletic Trainer</a>
+            <a href="#" class="item">Workouts</a>
+            <a href="#" class="item">Routine</a>
+            <a href="#" class="item">Diet</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Stephen Nwaukoni</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <script>
+        $('.tabular.menu .item').tab();
+        $('.progress').progress();
+
+        var ctx = document.getElementById('myChart').getContext("2d");
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+        datasets: [{
+            label: "Calories Burned",
+            borderColor: "#80b6f4",
+            pointBorderColor: "#80b6f4",
+            pointBackgroundColor: "#80b6f4",
+            pointHoverBackgroundColor: "#80b6f4",
+            pointHoverBorderColor: "#80b6f4",
+            pointBorderWidth: 10,
+            pointHoverRadius: 10,
+            pointHoverBorderWidth: 1,
+            pointRadius: 3,
+            fill: false,
+            borderWidth: 4,
+            data: [300, 700, 400, 600, 500, 335, 900]
+        }]
+    },
+    options: {
+        legend: {
+            position: "bottom"
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "bold",
+                    beginAtZero: true,
+                    maxTicksLimit: 5,
+                    padding: 20
+                },
+                gridLines: {
+                    drawTicks: false,
+                    display: false
+                }
+
+            }],
+            xAxes: [{
+                gridLines: {
+                    zeroLineColor: "transparent"
+                },
+                ticks: {
+                    padding: 20,
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "bold"
+                }
+            }]
+        }
+    }
+});
+
+var ctx1 = document.getElementById('myChart1').getContext("2d");
+
+var myChart1 = new Chart(ctx1, {
+    type: 'line',
+    data: {
+        labels: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+        datasets: [{
+            label: "Calories Consumed",
+            borderColor: "#ff8c00",
+            pointBorderColor: "#ff8c00",
+            pointBackgroundColor: "#ff8c00",
+            pointHoverBackgroundColor: "#ff8c00",
+            pointHoverBorderColor: "#ff8c00",
+            pointBorderWidth: 10,
+            pointHoverRadius: 10,
+            pointHoverBorderWidth: 1,
+            pointRadius: 3,
+            fill: false,
+            borderWidth: 4,
+            data: [2560, 3000, 2760, 2800, 2950, 3300, 3400]
+        }]
+    },
+    options: {
+        legend: {
+            position: "bottom"
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "bold",
+                    beginAtZero: true,
+                    maxTicksLimit: 5,
+                    padding: 20
+                },
+                gridLines: {
+                    drawTicks: false,
+                    display: false
+                }
+
+            }],
+            xAxes: [{
+                gridLines: {
+                    zeroLineColor: "transparent"
+                },
+                ticks: {
+                    padding: 20,
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "bold"
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>
+
