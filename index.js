@@ -1,5 +1,5 @@
-let num_input = document.getElementById("num_words");
-let words_text = document.getElementById("words");
+let num_input = document.getElementById("num_words")
+let words_text = document.getElementById("words")
 
 let word_url = "https:/random-word-api.herokuapp.com/word?number="
 
