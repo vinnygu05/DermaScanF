@@ -25,6 +25,12 @@
     <!-- Contain for all other HTML Elements -->
     <div style="padding:5%;">
 
+        <!-- Loading Bar -->
+        <h4 id="loadingmodel">Loading ML Model</h4>
+        <div id="progressbar" class="progress">
+            <div class="indeterminate"></div>
+        </div>
+
         <!-- Image File Input -->
         <div class="file-field input-field">
             <div class="btn">
@@ -69,6 +75,9 @@
         var imgtag = document.getElementById("image")
         var prediction_text = document.getElementById("prediction")
         var probability_text = document.getElementById("probability")
+
+        var progressbar = document.getElementById("progressbar")
+        var loadingmodel = document.getElementById("loadingmodel")
 
         var model = null
 
@@ -127,6 +136,9 @@
             console.log("Loading Model")
             model = await tf.loadLayersModel('cnn_model/model.json')
             console.log("Loaded Model")
+
+            loadingmodel.innerHTML = "Loaded ML Model"
+            progressbar.style.display = "none"
         }
 
         loadModel()
