@@ -47,7 +47,7 @@
             var fromElem = document.getElementById("from")
 
             messageElem.innerHTML = atob(urlParams.get('msg'))
-            fromElem.innerHTML = atob(urlParams.get('frm'))
+            fromElem.innerHTML = "From " + atob(urlParams.get('frm'))
         </script>
     </body>
   </html>
