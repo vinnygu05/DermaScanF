@@ -31,6 +31,7 @@
                       <a id="from"></a>
                     </div>
                   </div>
+                  <h5 id="discount"></h5>
                 </div>
               </div>
         </div>
@@ -45,9 +46,11 @@
 
             var messageElem = document.getElementById("message")
             var fromElem = document.getElementById("from")
+            var discountElem = document.getElementById("discount")
 
             messageElem.innerHTML = atob(urlParams.get('msg'))
             fromElem.innerHTML = "From " + atob(urlParams.get('frm'))
+            discountElem.innerHTML = "Discount Code: " + atob(urlParams.get('dscnt'))
         </script>
     </body>
   </html>

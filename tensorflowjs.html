@@ -1,3 +1,4 @@
+<!-- Demo: https://rganesh22.github.io/htmlmockups/tensorflowjs.html -->
 <!-- HTML allows us to create UI elements we can interact with-->
 
 <head>
@@ -97,13 +98,19 @@
                                 .resizeNearestNeighbor([75, 100])
                                 .toFloat().expandDims();
                 
-                prediction = await model.predict(tensorImg).data()  
-                let predicted_class = prediction.indexOf(Math.max(...prediction));
+                model.predict(tensorImg).data().then(
+			function (prediction){
+                let predicted_class = prediction.indexOf(Math.max(...prediction))
+
 
                 console.log(classes[predicted_class])
+                console.log(prediction) 
 
                 prediction_text.innerHTML = classes[predicted_class]
                 probability_text.innerHTML = Math.round(prediction[predicted_class] * 100) + "% Confidence"
+			}
+		)
+                
             }catch(error){
                 alert("Error Classifying Image")
             }
