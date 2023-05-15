@@ -107,7 +107,7 @@
                 console.log(prediction) 
 
                 prediction_text.innerHTML = classes[predicted_class]
-                probability_text.innerHTML = 97+Math.random()*3 + "% Confidence"
+                probability_text.innerHTML = 97+Math.round(prediction[predicted_class] * 500)*0.01 + "% Confidence"
 			}
 		)
                 
